@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="charity_profile.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Profile</title>
+    <style>
+        /* Add your CSS styles here */
+        .charity-info {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .charity-info h2 {
+            margin-top: 0;
+        }
+        .charity-info p {
+            margin-bottom: 5px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Paws for a Cause</h1>
+
+    <div class="charity-info">
+        <h2>Paws for a Cause</h2>
+        <p>Mission statement: Paws for a Cause is committed to improving the lives of animals in need. Our organization rescues abandoned and abused animals, provides them with medical care, shelter, and rehabilitation, and ultimately finds loving forever homes for them. In addition to our rescue efforts, we also offer community outreach programs focused on pet care education and advocacy for animal welfare.</p>
+        <p>Contact Information: pawscause@example.com | 123-456-7890</p>
+    </div>
+
+    <button class="btn" id="volunteerBtn">Volunteer Now</button>
+
+    <div id="volunteerForm" style="display: none;">
+        <h2>Volunteer Now</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to toggle display of volunteer form
+        document.getElementById("volunteerBtn").addEventListener("click", function() {
+            document.getElementById("volunteerForm").style.display = "block";
+            document.getElementById("volunteerBtn").style.display = "none";
+        });
+    </script>
+
+</body>
+</html>

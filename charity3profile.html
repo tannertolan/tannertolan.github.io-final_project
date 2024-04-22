@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="charity_profile.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Profile</title>
+    <style>
+        /* Add your CSS styles here */
+        .charity-info {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .charity-info h2 {
+            margin-top: 0;
+        }
+        .charity-info p {
+            margin-bottom: 5px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Green Earth Alliance</h1>
+
+    <div class="charity-info">
+        <h2>Green Earth Alliance</h2>
+        <p>Mission statement: Green Earth Alliance is dedicated to environmental conservation and sustainability. We work to protect and preserve natural habitats, promote renewable energy initiatives, and raise awareness about environmental issues impacting our planet. Our organization actively engages in tree planting campaigns, beach cleanups, and educational programs to inspire individuals and communities to take action towards a greener future.</p>
+        <p>Contact Information: GEA@example.com | 123-456-7890</p>
+    </div>
+
+    <button class="btn" id="volunteerBtn">Volunteer Now</button>
+
+    <div id="volunteerForm" style="display: none;">
+        <h2>Volunteer Now</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to toggle display of volunteer form
+        document.getElementById("volunteerBtn").addEventListener("click", function() {
+            document.getElementById("volunteerForm").style.display = "block";
+            document.getElementById("volunteerBtn").style.display = "none";
+        });
+    </script>
+
+</body>
+</html>
